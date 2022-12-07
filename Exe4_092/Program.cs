@@ -30,33 +30,33 @@ namespace Exe4_092
 
         public void push(int element) //Method untuk menambah data pada array
         {
-            if (top == max - 1)
+            if (top == max - 1) //Jika top sama dengan max - 1
             {
                 return;
             }
             else
             {
-                saras[++top] = element;
+                saras[++top] = element; //Maka array saras increment 1 atau data bertambah 1
             }
         }
 
         public int pop() //Method untuk menghilangkan data pada array
         {
-            if (top == -1)
+            if (top == -1) //Jika top menunjukkan data paling atas
             {
-                return -1;
+                return -1; //Kembali turun -1
             }
             else
             {
                 Console.WriteLine("\nThe Popped element is: " + saras[top]);
-                return saras[top--];
+                return saras[top--]; //Maka muncul pesan top array saras yang sudah berkurang 1, atau top decrement 1
             }
         }
 
         public void display()
         {
-            if (empty())
-                Console.WriteLine("\nStack Empty");
+            if (empty()) //Jika method empty dipanggil
+                Console.WriteLine("\nStack Empty"); //Muncul pesan
             else
             {
                 for (int i = 0; i <= top; i++)
