@@ -28,7 +28,7 @@ namespace Exe4_092
                 return (false);
         }
 
-        public void push(int element)
+        public void push(int element) //Method untuk menambah data pada array
         {
             if (top == max - 1)
             {
@@ -40,7 +40,7 @@ namespace Exe4_092
             }
         }
 
-        public int pop()
+        public int pop() //Method untuk menghilangkan data pada array
         {
             if (top == -1)
             {
