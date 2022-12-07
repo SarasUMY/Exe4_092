@@ -16,7 +16,7 @@ namespace Exe4_092
         {
             saras = new int[size];
             top = -1;
-            max = 90;
+            max = 110;
         }
 
         bool empty()
@@ -64,6 +64,46 @@ namespace Exe4_092
                 }
                 Console.WriteLine();
             }
+        }
+
+        static void Main(string[] args)
+        {
+            Stack s = new Stack(110);
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n=====STACK MENU=====\n");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.Write("\nEnter your choice: ");
+                string sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\nEnter a number: ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;
+                    case '2':
+                        if (s.empty())
+                        {
+                            Console.WriteLine("\nStack Empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
+                }
         }
     }
 }
