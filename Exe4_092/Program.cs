@@ -61,7 +61,7 @@ namespace Exe4_092
             {
                 for (int i = 0; i <= top; i++)
                 {
-                    Console.WriteLine("Element[" + (i + 1) + "]: " + saras[i]);
+                    Console.WriteLine("Saras[" + (i + 1) + "]: " + saras[i]);
                 }
                 Console.WriteLine();
             }
