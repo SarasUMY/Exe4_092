@@ -56,12 +56,12 @@ namespace Exe4_092
         public void display()
         {
             if (empty()) //Jika method empty dipanggil
-                Console.WriteLine("\nStack Empty"); //Muncul pesan
+                Console.WriteLine("\nStack Empty"); //Muncul pesan Stack Empty
             else
             {
                 for (int i = 0; i <= top; i++)
                 {
-                    Console.WriteLine("Saras[" + (i + 1) + "]: " + saras[i]);
+                    Console.WriteLine("Element[" + (i + 1) + "]: " + saras[i]); //Kemudian terjadi perulangan
                 }
                 Console.WriteLine();
             }
