@@ -8,23 +8,35 @@ namespace Exe4_092
 {
     class Stack
     {
-        public int[] element;
+        public int[] saras;
         public int top;
         public int max;
 
         public Stack(int size)
         {
-            element = new int[size];
+            saras = new int[size];
             top = -1;
-            max = size;
+            max = 90;
         }
 
         bool empty()
         {
-            if (top == -1)
+            if (top == -1) //Jika stack empty maka top = -1
                 return (true);
             else
                 return (false);
+        }
+
+        public void push(int element)
+        {
+            if (top == max - 1)
+            {
+                return;
+            }
+            else
+            {
+                saras[++top] = element;
+            }
         }
     }
 }
