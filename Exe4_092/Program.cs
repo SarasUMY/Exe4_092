@@ -8,11 +8,12 @@ namespace Exe4_092
 {
     class Stack
     {
+        //Untuk deklarasi variabel int
         public int[] saras;
         public int top;
         public int max;
 
-        public Stack(int size)
+        public Stack(int size) //Method untuk memanggil variabel
         {
             saras = new int[size];
             top = -1;
