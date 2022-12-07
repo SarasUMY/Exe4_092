@@ -18,5 +18,13 @@ namespace Exe4_092
             top = -1;
             max = size;
         }
+
+        bool empty()
+        {
+            if (top == -1)
+                return (true);
+            else
+                return (false);
+        }
     }
 }
