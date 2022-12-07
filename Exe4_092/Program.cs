@@ -104,6 +104,7 @@ namespace Exe4_092
                         Console.WriteLine("\nInvalid Choice");
                         break;
                 }
+            }
         }
     }
 }
