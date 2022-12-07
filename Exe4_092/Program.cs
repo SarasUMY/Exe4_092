@@ -38,5 +38,18 @@ namespace Exe4_092
                 saras[++top] = element;
             }
         }
+
+        public int pop()
+        {
+            if (top == -1)
+            {
+                return -1;
+            }
+            else
+            {
+                Console.WriteLine("\nThe Popped element is: " + saras[top]);
+                return saras[top--];
+            }
+        }
     }
 }
